@@ -64,6 +64,8 @@ f.
 
 <img width="662" alt="SyntaxScreenshot" src="https://user-images.githubusercontent.com/86116604/202878710-868ee743-5f23-4b6a-9add-d365b166bde4.png">
 
+<img width="655" alt="Screen Shot 2022-11-19 at 4 26 18 PM" src="https://user-images.githubusercontent.com/86116604/202886009-5a86d985-f1ea-48ce-81ff-4c7e1915a2d7.png">
+
 g.
 
 2 with no errors:
