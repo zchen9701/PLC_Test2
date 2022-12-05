@@ -37,13 +37,106 @@ WHOLE_NUM
 
 IDENT
 
+Token Codes:
+
+a.
+Regex:
+
+Addition + [Token Code:1]
+
+Minus – [Token Code:1]
+
+Times * [Token Code:2]
+
+Division / [Token Code:3]
+
+Module % [Token Code:4]
+
+Less than < [Token Code:5]
+
+Greater than > [Token Code:6]
+
+Less than Equal To <= [Token Code:7]
+
+Greater than Equal To >= [Token Code:8]
+
+Equal To = [Token Code:9]
+
+ Not Equal To != [Token Code:10]
+ 
+Assignment === [Token Code:11]
+
+Break precedence () \(.*\) [Token Code:12]
+
+LEFTPAREN ( [Token Code:13]
+
+RIGHTPAREN ) [Token Code:14]
+
+WHOLE_NUM [Token Code:15]
+
+IDENT [Token Code:16]
+
+
+Integer Literals:
+1 byte = 1_1111;
+ 2 bytes = 2_2222;
+ 4 bytes = 4_4444;
+ 8 bytes = 8_8888
+
+![IMG_3F5947CF30EF-1](https://user-images.githubusercontent.com/86116604/205744962-def71fe1-c99c-4f3c-9b67-bd963a968100.jpeg)
+
+
+Key Words:
+
+Loop: for_loop
+
+Data Type declaration: num|words|
+Statement Selection: if_ 
+
+
+
 b.
 
-E-> E+T|E-T|T 
+PEAMDS
 
-T->T*F|T/F|T%F
+A → A - B
 
-F->ident|whole_num|(E)|total
+A → B
+
+B → B / C
+
+B→C
+
+C → B * S
+
+S→ T
+
+T → T + O
+
+O → P
+
+P → id
+
+P → (A)
+
+
+Production Rule:
+EBNF:
+<Program>::= BEGIN <stmt_list> END
+
+<stmt_list>::={<stmt>}
+
+<stmt>::=<dec>|<if>|<loop_>|<assign_>
+
+ <dec>::= ={<stmt>';'}
+ 
+ 
+ <if_>::= if_`(`< bool >`)` `{` <stmt_list> `}` [else `{` <stmt_list> `}` ]
+ 
+ 
+<loop_>::= {'<loop_>'(<stmt>`={;}`)` }
+
+<assign_>::= 'id' '='<expr>
 
 c. 
 
