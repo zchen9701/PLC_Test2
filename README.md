@@ -97,27 +97,12 @@ Statement Selection: if_
 
 b.
 
-PEAMDS
-
-A → A - B
-
-A → B
-
-B → B / C
-
-B→C
-
-C → B * S
-
-S→ T
-
-T → T + O
-
-O → P
-
-P → id
-
-P → (A)
+PESAMD
+<A> --> <A-B>|<A+B>|<B>
+ 
+<B> --> <B>*<C>|<B>/<C>|<B>%<C>|<C>
+ 
+ <C> --> id|int|float|(<A>)
 
 
 Production Rule:
@@ -200,7 +185,11 @@ int isn't define
 
 h.
 
-<img width="1423" alt="Screen Shot 2022-11-19 at 11 36 44 PM" src="https://user-images.githubusercontent.com/86116604/202885832-3d25c8e7-6a04-4b01-9ce5-47aa2f912b6b.png">
+<img width="1428" alt="Screen Shot 2022-12-05 at 5 34 05 PM" src="https://user-images.githubusercontent.com/86116604/205757504-f3963592-e609-4c37-91b2-6e6ee9f61736.png">
+ 
+ <img width="654" alt="Screen Shot 2022-12-05 at 5 35 46 PM" src="https://user-images.githubusercontent.com/86116604/205757613-c885042d-ab71-408d-81f2-080ce4549f27.png">
+
+
 
 
 
