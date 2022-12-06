@@ -97,31 +97,34 @@ Statement Selection: if_
 
 b.
 
-PESAMD
-<A> --> <A-B>|<A+B>|<B>
+ PESAMD
+
+ < A> --> <A - B>|<A + B>|< B >
  
-<B> --> <B>*<C>|<B>/<C>|<B>%<C>|<C>
+  < B> --> < B > * < C > |< B > / < C >|< B > % < C>|< C >
  
- <C> --> id|int|float|(<A>)
+   < C> --> id |int |float |(< A >)
 
 
 Production Rule:
+  
 EBNF:
-<Program>::= BEGIN <stmt_list> END
+  
+< Program > ::= BEGIN < stmt_list > END
 
-<stmt_list>::={<stmt>}
+< stmt_list > ::= {< stmt >}
 
-<stmt>::=<dec>|<if>|<loop_>|<assign_>
+< stmt >::=< dec >|< if >|<loop_>|< assign_ >
 
- <dec>::= ={<stmt>';'}
+ < dec >::= ={< stm t>';'}
  
  
- <if_>::= if_`(`< bool >`)` `{` <stmt_list> `}` [else `{` <stmt_list> `}` ]
+ < if_ >::= if_`(`< bool >`)` `{` < stmt_list > `}` [else `{` < stmt_list > `}` ]
  
  
-<loop_>::= {'<loop_>'(<stmt>`={;}`)` }
+< loop_ >::= {'< loop_ >'(< stmt >`={;}`)` }
 
-<assign_>::= 'id' '='<expr>
+<assign_>::= 'id' '='< expr >
 
 c. 
 
@@ -188,9 +191,5 @@ h.
 <img width="1428" alt="Screen Shot 2022-12-05 at 5 34 05 PM" src="https://user-images.githubusercontent.com/86116604/205757504-f3963592-e609-4c37-91b2-6e6ee9f61736.png">
  
  <img width="654" alt="Screen Shot 2022-12-05 at 5 35 46 PM" src="https://user-images.githubusercontent.com/86116604/205757613-c885042d-ab71-408d-81f2-080ce4549f27.png">
-
-
-
-
 
 
