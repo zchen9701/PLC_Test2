@@ -37,10 +37,9 @@ WHOLE_NUM
 
 IDENT
 
+
 Token Codes:
 
-a.
-Regex:
 
 Addition + [Token Code:1]
 
