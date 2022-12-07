@@ -44,37 +44,37 @@ Regex:
 
 Addition + [Token Code:1]
 
-Minus – [Token Code:1]
+Minus – [Token Code:2]
 
-Times * [Token Code:2]
+Times * [Token Code:3]
 
-Division / [Token Code:3]
+Division / [Token Code:4]
 
-Module % [Token Code:4]
+Module % [Token Code:5]
 
-Less than < [Token Code:5]
+Less than < [Token Code:6]
 
-Greater than > [Token Code:6]
+Greater than > [Token Code:7]
 
-Less than Equal To <= [Token Code:7]
+Less than Equal To <= [Token Code:8]
 
-Greater than Equal To >= [Token Code:8]
+Greater than Equal To >= [Token Code:9]
 
-Equal To = [Token Code:9]
+Equal To = [Token Code:10]
 
- Not Equal To != [Token Code:10]
+ Not Equal To != [Token Code:11]
  
-Assignment === [Token Code:11]
+Assignment === [Token Code:12]
 
-Break precedence () \(.*\) [Token Code:12]
+Break precedence () \(.*\) [Token Code:13]
 
-LEFTPAREN ( [Token Code:13]
+LEFTPAREN ( [Token Code:14]
 
-RIGHTPAREN ) [Token Code:14]
+RIGHTPAREN ) [Token Code:15]
 
-WHOLE_NUM [Token Code:15]
+WHOLE_NUM [Token Code:16]
 
-IDENT [Token Code:16]
+IDENT [Token Code:17]
 
 
 Integer Literals:
@@ -119,10 +119,10 @@ EBNF:
  < dec >::= ={< stm t>';'}
  
  
- < if_ >::= if_`(`< bool >`)` `{` < stmt_list > `}` [else `{` < stmt_list > `}` ]
+ < if_ >::= if_`(` < bool > `)` `{` < stmt_list > `}` [else `{` < stmt_list > `}` ]
  
  
-< loop_ >::= {'< loop_ >'(< stmt >`={;}`)` }
+< loop_ >::= {' < loop_ >' (< stmt >`={;}`)` }
 
 <assign_>::= 'id' '='< expr >
 
@@ -191,5 +191,11 @@ h.
 <img width="1428" alt="Screen Shot 2022-12-05 at 5 34 05 PM" src="https://user-images.githubusercontent.com/86116604/205757504-f3963592-e609-4c37-91b2-6e6ee9f61736.png">
  
  <img width="654" alt="Screen Shot 2022-12-05 at 5 35 46 PM" src="https://user-images.githubusercontent.com/86116604/205757613-c885042d-ab71-408d-81f2-080ce4549f27.png">
+ 
+ <img width="495" alt="Screen Shot 2022-12-06 at 7 21 07 PM" src="https://user-images.githubusercontent.com/86116604/206055832-0e2631db-7ec2-43be-b3fe-3308fad2bc12.png">
+ 
+ <img width="473" alt="Screen Shot 2022-12-06 at 7 21 38 PM" src="https://user-images.githubusercontent.com/86116604/206055858-fcd2b5a4-49c4-408b-a858-c9b6957f035e.png">
+
+
 
 
